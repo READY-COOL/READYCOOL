@@ -3,73 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>READYCOOL</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #001f3f; /* Promijenjena boja pozadine u tamno plavu */
-            color: #fff; /* Promijenjena boja teksta u bijelu */
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #FFFF00;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .naslovna {
-            text-align: center;
-            padding: 100px 0;
-        }
-        .naslovna h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .naslovna p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Gradjevinski Materijal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>READYCOOL</h1>
+        <h1>Dobrodošli u naš dućan za građevinski materijal</h1>
     </header>
-
-    <div class="naslovna">
-        <h1>Vaš pouzdani partner za građevinske potrebe.</h1>
-        <p>Širok asortiman visokokvalitetne građevinske opreme i materijala.</p>
+    <div id="products">
+        <!-- Proizvodi će biti dinamički generirani JavaScript-om -->
+    </div>
+    <div id="cart">
+        <h2>Košarica</h2>
+        <ul id="cart-items">
+            <!-- Proizvodi u košarici će biti dinamički generirani JavaScript-om -->
+        </ul>
+        <button id="checkout-btn">Završi kupovinu</button>
     </div>
 
-    <section>
-        <h2>Ovo je sekcija 1</h2>
-        <p>Ovdje možete napisati nešto zanimljivo o svojoj web stranici.</p>
-    </section>
-
-    <section>
-        <h2>Ovo je sekcija 2</h2>
-        <p>Ovdje možete staviti više informacija o svojoj web stranici.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Moja Web Stranica</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#products, #cart {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+#cart {
+    background-color: #f4f4f4;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background-color: #45a049;
+}
+// Dummy podaci za proizvode
+const products = [
+    { id: 1, name: "Cement", price: 10 },
+    { id: 2, name: "Cigle", price: 0.5 },
+    { id: 3, name: "Pijesak", price: 5 },
+    { id: 4, name: "Šljunak", price: 7 }
+];
+
+// Funkcija za prikazivanje proizvoda
+function displayProducts() {
+    const productsDiv = document.getElementById("products");
+    productsDiv.innerHTML = "<h2>Proizvodi</h2>";
+    products.forEach(product => {
+        productsDiv.innerHTML += `<div>
+                                    <p>${product.name} - ${product.price} kn</p>
+                                    <button onclick="addToCart(${product.id})">Dodaj u košaricu</button>
+                                 </div>`;
+    });
+}
+
+// Funkcija za dodavanje proizvoda u košaricu
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    const cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML += `<li>${product.name} - ${product.price} kn</li>`;
+}
+
+// Inicijalno prikazivanje proizvoda
+displayProducts();
