@@ -38,8 +38,23 @@
         .naslovna {
             text-align: center;
             padding: 100px 0;
-            background-color: #001f3f; /* Tamno plava pozadina */
+            background: url('path/to/your/image.jpg') no-repeat center center; /* Putanja do vaše slike */
+            background-size: cover; /* Kako bi slika prekrila cijelu pozadinu */
             color: #fff; /* Bijela boja teksta */
+            position: relative;
+        }
+        .naslovna::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Tamni overlay za bolju čitljivost teksta */
+        }
+        .naslovna h1, .naslovna p {
+            position: relative;
+            z-index: 1;
         }
         .naslovna h1 {
             font-size: 36px;
@@ -48,6 +63,7 @@
         .naslovna p {
             font-size: 18px;
             line-height: 1.6;
+
         }
     </style>
 </head>
