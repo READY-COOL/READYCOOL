@@ -1,26 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradjevinski Materijal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Moja Web Stranica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f; /* Tamno plava pozadina */
+            color: #fff; /* Bijela boja teksta */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            color: #000; /* Crna boja teksta u sekcijama */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .naslovna {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #FFFF00; /* Žuta boja pozadine */
+            color: #000; /* Crna boja teksta */
+        }
+        .naslovna h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .naslovna p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Dobrodošli u naš dućan za građevinski materijal</h1>
+        <h1>Dobrodošli na Moju Web Stranicu</h1>
     </header>
-    <div id="products">
-        <!-- Proizvodi će biti dinamički generirani JavaScript-om -->
-    </div>
-    <div id="cart">
-        <h2>Košarica</h2>
-        <ul id="cart-items">
-            <!-- Proizvodi u košarici će biti dinamički generirani JavaScript-om -->
-        </ul>
-        <button id="checkout-btn">Završi kupovinu</button>
+
+    <div class="naslovna">
+        <h1>Naslovna Stranica</h1>
+        <p>Ovo je uvodna stranica vaše web stranice. Možete ovdje dodati kratki opis onoga što posjetitelji mogu očekivati na vašoj web stranici.</p>
     </div>
 
-    <script src="script.js"></script>
+    <section>
+        <h2>Ovo je sekcija 1</h2>
+        <p>Ovdje možete napisati nešto zanimljivo o svojoj web stranici.</p>
+    </section>
+
+    <section>
+        <h2>Ovo je sekcija 2</h2>
+        <p>Ovdje možete staviti više informacija o svojoj web stranici.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moja Web Stranica</p>
+    </footer>
 </body>
 </html>
