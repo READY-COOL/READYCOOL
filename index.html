@@ -63,20 +63,17 @@
         }
         .naslovna p {
             font-size: 18px;
-            line-height: 1.6;
+             line-height: 1.6;
         }
         .sadržaj {
-            display: flex;
-            justify-content: space-between; /* Promijenjeno u space-between */
-            align-items: flex-start; /* Postavljanje poravnanja elemenata na vrh */
-            flex-wrap: wrap;
+            display: grid; /* Koristimo CSS grid */
+            grid-template-columns: repeat(2, 1fr); /* Dvije kolone */
+            grid-gap: 20px; /* Razmak između elemenata */
             padding: 0 20px; /* Dodan padding kako bi se spriječilo preklapanje sa strane */
         }
         section {
-            width: calc(50% - 20px); /* Postavljanje širine na 50% minus razmak */
             background-color: #fff; /* Promijenjena boja pozadine na bijelu */
             color: #000; /* Crna boja teksta u sekcijama */
-            margin-bottom: 40px; /* Dodan razmak između sekcija */
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -94,24 +91,25 @@
 </head>
 <body>
     <header>
-        <h1>ReadyCool</h1>
+        <h1>Dobrodošli na Moju Web Stranicu</h1>
     </header>
 
     <div class="naslovna">
-        <h1>Vaš pouzdani partner za građevinske potrebe</h1>
-        <p>Širok asortiman visokokvalitetne građevinske opreme i materijala.</p>
-       
+        <h1>Naslovna Stranica</h1>
+        <p>Ovo je uvodna stranica vaše web stranice. Možete ovdje dodati kratki opis onoga što posjetitelji mogu očekivati na vašoj web stranici.</p>
     </div>
 
-    <section>
-        <h2>Ovo je sekcija 1</h2>
-        <p>Ovdje možete napisati nešto zanimljivo o svojoj web stranici.</p>
-    </section>
+    <div class="sadržaj">
+        <section>
+            <h2>Ovo je sekcija 1</h2>
+            <p>Ovdje možete napisati nešto zanimljivo o svojoj web stranici.</p>
+        </section>
 
-    <section>
-        <h2>Ovo je sekcija 2</h2>
-        <p>Ovdje možete staviti više informacija o svojoj web stranici.</p>
-    </section>
+        <section>
+            <h2>Ovo je sekcija 2</h2>
+            <p>Ovdje možete staviti više informacija o svojoj web stranici.</p>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Moja Web Stranica</p>
