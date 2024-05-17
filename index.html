@@ -67,14 +67,16 @@
         }
         .sadržaj {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between; /* Promijenjeno u space-between */
+            align-items: flex-start; /* Postavljanje poravnanja elemenata na vrh */
             flex-wrap: wrap;
+            padding: 0 20px; /* Dodan padding kako bi se spriječilo preklapanje sa strane */
         }
         section {
-            flex: 1;
+            width: calc(50% - 20px); /* Postavljanje širine na 50% minus razmak */
             background-color: #fff; /* Promijenjena boja pozadine na bijelu */
             color: #000; /* Crna boja teksta u sekcijama */
-            margin: 20px;
+            margin-bottom: 40px; /* Dodan razmak između sekcija */
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
