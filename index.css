@@ -1,0 +1,194 @@
+  /* Dodajemo malo stila */
+  nav {
+    background-color: #AA6C39;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+} 
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff; /* Promijenjena boja teksta u bijelu */
+            padding-bottom: 500px; /* Dodajemo dodatni prostor na dnu tijela */
+        }
+        header {
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            color: #000; /* Crna boja teksta u sekcijama */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .naslovna {
+            text-align: center;
+            padding: 100px 0;
+            background: url('pexels-ilya-3291978-5335018.jpg') no-repeat center center; /* Putanja do vaše slike */
+            background-position: 0px -265px;
+            background-size: cover; /* Kako bi slika prekrila cijelu pozadinu */
+            color: #fff; /* Bijela boja teksta */
+            position: relative;
+        }
+        .naslovna::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Tamni overlay za bolju čitljivost teksta */
+        }
+        .naslovna h1, .naslovna p {
+            position: relative;
+            z-index: 1;
+        }
+        .naslovna h1 {
+            font-size: 36px;
+            margin-bottom: 90px;
+        }
+        .naslovna p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .prazan-prostor {
+            height: 150px; /* Visina praznog prostora */
+            background-color: transparent; /* Transparentna pozadina */
+        }
+        .sadržaj {
+            display: grid; /* Koristimo CSS grid */
+            grid-template-columns: repeat(3, 1fr); /* Tri kolone */
+            grid-gap: 20px; /* Razmak između elemenata */
+            padding: 0 20px; /* Dodan padding kako bi se spriječilo preklapanje sa strane */
+        }
+        section {
+            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            color: #fff; /* bjela boja teksta u sekcijama */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff; /* Promijenjena boja teksta u bijelu */
+            padding-bottom: 500px; /* Dodajemo dodatni prostor na dnu tijela */
+        }
+        header {
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            color: #000; /* Crna boja teksta u sekcijama */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .naslovna {
+            text-align: center;
+            padding: 100px 0;
+            background: url('pexels-ilya-3291978-5335018.jpg') no-repeat center center; /* Putanja do vaše slike */
+            background-position: 0px -265px;
+            background-size: cover; /* Kako bi slika prekrila cijelu pozadinu */
+            color: #fff; /* Bijela boja teksta */
+            position: relative;
+        }
+        .naslovna::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Tamni overlay za bolju čitljivost teksta */
+        }
+        .naslovna h1, .naslovna p {
+            position: relative;
+            z-index: 1;
+        }
+        .naslovna h1 {
+            font-size: 36px;
+            margin-bottom: 90px;
+        }
+        .naslovna p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .prazan-prostor {
+            height: 150px; /* Visina praznog prostora */
+            background-color: transparent; /* Transparentna pozadina */
+        }
+        .sadržaj {
+            display: grid; /* Koristimo CSS grid */
+            grid-template-columns: repeat(3, 1fr); /* Tri kolone */
+            grid-gap: 20px; /* Razmak između elemenata */
+            padding: 0 20px; /* Dodan padding kako bi se spriječilo preklapanje sa strane */
+        }
+        section {
+            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            color: #fff; /* bjela boja teksta u sekcijama */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .slika{
+            Width:500px;
+            height:375px;
+        }
