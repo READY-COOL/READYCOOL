@@ -199,3 +199,55 @@ body {
             height: 150px; /* Postavite željenu veličinu slike */
             object-fit: cover; /* Kako bi slika popunila okvir */
         }
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('pexels-james-wheeler-417074.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .team-member {
+            flex: 1 1 30%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            object-fit: cover;
+        }
+        .team-member h3 {
+            margin-top: 10px;
+            color: #007BFF;
+        }
+        .team-member p {
+            color: #666;
+        }
