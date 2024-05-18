@@ -192,3 +192,10 @@ body {
             Width:500px;
             height:375px;
         }
+        .rounded-image {
+            border-radius: 50%;
+            border: 5px solid red;
+            width: 150px; /* Postavite željenu veličinu slike */
+            height: 150px; /* Postavite željenu veličinu slike */
+            object-fit: cover; /* Kako bi slika popunila okvir */
+        }
