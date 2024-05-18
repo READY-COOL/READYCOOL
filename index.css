@@ -200,6 +200,7 @@ body {
             object-fit: cover; /* Kako bi slika popunila okvir */
         }
      /* Reset CSS */
+     /* Reset CSS */
 
 body, h1, h2, h3, p {
     margin: 0;
@@ -255,6 +256,24 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+
+/* Products Section */
+
+.product {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
 /* Responsive Design */
