@@ -45,6 +45,13 @@
             max-width: 100%;
             border-radius: 50%;
         }
+        .rounded-image {
+            border-radius: 50%;
+            border: 5px solid red;
+            width: 150px; /* Postavite željenu veličinu slike */
+            height: 150px; /* Postavite željenu veličinu slike */
+            object-fit: cover; /* Kako bi slika popunila okvir */
+        }
         .team-member h3 {
             margin-top: 10px;
             color: #fff;
@@ -61,18 +68,18 @@
         <h2>Naš tim</h2>
         <div class="team">
             <div class="team-member">
-                <img src="slika1.jpg" alt="Ime Prezime">
+                <img src="slika1.jpg" alt="Ime Prezime" class="rounded-image">
                 <h3>Ime Prezime</h3>
                 <p>Pozicija</p>
             </div>
             <div class="team-member">
-                <img src="slika2.jpg" alt="Ime Prezime">
+                <img src="slika2.jpg" alt="Ime Prezime" class="rounded-image">
                 <h3>Ime Prezime</h3>
                 <p>Pozicija</p>
             </div>
             <div class="team-member">
-                <img src="IMG_20170506_152317.jpg" alt="Ime Prezime">
-                <h3>lLuka Hržić</h3>
+                <img src="IMG_20170506_152317.jpg" alt="Luka Hržić" class="rounded-image">
+                <h3>Luka Hržić</h3>
                 <p>Pozicija</p>
             </div>
         </div>
