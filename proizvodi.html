@@ -3,84 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nama</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('pexels-james-wheeler-417074.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .team {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .team-member {
-            flex: 1 1 30%;
-            box-sizing: border-box;
-            padding: 10px;
-            margin: 10px;
-            background-color: #f7f7f7;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #007BFF;
-            object-fit: cover;
-        }
-        .team-member h3 {
-            margin-top: 10px;
-            color: #007BFF;
-        }
-        .team-member p {
-            color: #666;
-        }
-    </style>
+    <title>O nama - Građevinski Materijal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>O nama</h1>
-        <p>Dobrodošli na našu web stranicu! Mi smo tim stručnjaka posvećen pružanju najboljih usluga našim klijentima. Naša misija je osigurati visoku kvalitetu i zadovoljstvo u svakom projektu koji preuzmemo.</p>
-        <h2>Naš tim</h2>
-        <div class="team">
-            <div class="team-member">
-                <img src="slika1.jpg" alt="Ime Prezime" class="rounded-image">
-                <h3>Ime Prezime</h3>
-                <p>Pozicija</p>
-            </div>
-            <div class="team-member">
-                <img src="slika2.jpg" alt="Ime Prezime" class="rounded-image">
-                <h3>Ime Prezime</h3>
-                <p>Pozicija</p>
-            </div>
-            <div class="team-member">
-                <img src="IMG_20170506_152317.jpg" alt="Luka Hržić" class="rounded-image">
-                <h3>Luka Hržić</h3>
-                <p>Pozicija</p>
+    <section id="about-us">
+        <div class="container">
+            <h2>O nama</h2>
+            <p>Naša tvrtka posvećena je pružanju najkvalitetnijih građevinskih materijala na tržištu. Naš cilj je pomoći vam da izgradite svoje snove korištenjem najpouzdanijih proizvoda.</p>
+        </div>
+    </section>
+    
+    <section id="history">
+        <div class="container">
+            <h3>Naša povijest</h3>
+            <p>Osnovani smo 2005. godine i od tada smo postali lideri na tržištu građevinskih materijala. Naš razvojni put uključuje mnoge uspjehe i inovacije.</p>
+        </div>
+    </section>
+    
+    <section id="team">
+        <div class="container">
+            <h3>Naš tim</h3>
+            <div class="team-members">
+                <div class="member">
+                    <img src="path/to/photo1.jpg" alt="Ime Prezime">
+                    <h4>Ime Prezime</h4>
+                    <p>Pozicija</p>
+                </div>
+                <div class="member">
+                    <img src="path/to/photo2.jpg" alt="Ime Prezime">
+                    <h4>Ime Prezime</h4>
+                    <p>Pozicija</p>
+                </div>
+                <!-- Dodajte još članova po potrebi -->
             </div>
         </div>
-    </div>
+    </section>
+    
+    <section id="values">
+        <div class="container">
+            <h3>Naše vrijednosti</h3>
+            <p>Vjerujemo u integritet, kvalitetu i timski rad. Naša kultura rada temelji se na poštovanju, inovacijama i stalnom učenju.</p>
+        </div>
+    </section>
+    
+    <section id="locations">
+        <div class="container">
+            <h3>Naše lokacije</h3>
+            <p>Posjetite nas na nekoj od naših lokacija diljem zemlje:</p>
+            <ul>
+                <li>Adresa 1, Grad</li>
+                <li>Adresa 2, Grad</li>
+                <!-- Dodajte još adresa po potrebi -->
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h3>Kontaktirajte nas</h3>
+            <p>Email: info@tvrtka.com</p>
+            <p>Telefon: +385 1 234 5678</p>
+        </div>
+    </section>
 </body>
 </html>
