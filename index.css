@@ -206,7 +206,7 @@ body {
           }
           
           .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
           }
@@ -222,13 +222,13 @@ body {
           
           .team-members {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
+            justify-content: space-around;
           }
           
           .member {
             text-align: center;
-            margin: 20px;
+            margin-bottom: 20px;
           }
           
           .member img {
@@ -245,5 +245,17 @@ body {
           
           ul li {
             margin-bottom: 10px;
+          }
+          
+          @media (min-width: 768px) {
+            .container {
+              width: 750px;
+            }
+          }
+          
+          @media (min-width: 992px) {
+            .container {
+              width: 970px;
+            }
           }
           
