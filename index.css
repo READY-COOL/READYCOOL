@@ -199,7 +199,7 @@ body {
             height: 150px; /* Postavite željenu veličinu slike */
             object-fit: cover; /* Kako bi slika popunila okvir */
         }
-   /* Reset CSS */
+  /* Reset CSS */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -219,7 +219,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -229,6 +229,7 @@ header {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 20px;
+    border-radius: 10px 10px 0 0;
 }
 
 header h1 {
@@ -240,7 +241,7 @@ section {
     padding: 20px;
     margin-bottom: 30px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -286,4 +287,8 @@ ul li {
     }
 }
 
-@media (min-width: 992px)
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
