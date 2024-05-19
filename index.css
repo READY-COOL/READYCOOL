@@ -110,6 +110,8 @@ body {
             padding-bottom: 500px; /* Dodajemo dodatni prostor na dnu tijela */
         }
         header {
+            display: flex;
+            flex-direction:row;
             background-color: #040720; /* Promijenjena boja pozadine na #040720 */
             color: #fff;
             padding: 10px 0;
@@ -198,4 +200,13 @@ body {
             width: 150px; /* Postavite željenu veličinu slike */
             height: 150px; /* Postavite željenu veličinu slike */
             object-fit: cover; /* Kako bi slika popunila okvir */
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #readycool {
+            font-size: 1.5em; /* adjust font size as needed */
         }
