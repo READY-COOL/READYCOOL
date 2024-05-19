@@ -1,6 +1,6 @@
   /* Dodajemo malo stila */
   nav {
-    background-color: #AA6C39;
+    background-color: transparent;
     padding: 10px 0;
     text-align: center;
 }
@@ -215,7 +215,7 @@ body {
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: #333;
+            background-color: ##040720;
             color: #fff;
         }
         
