@@ -201,17 +201,39 @@ body {
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #040720;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         
-        .naslov-gradijent {
+        .naslov-kucanje {
             margin-top: 50px;
             font-size: 2.5em;
-            background: linear-gradient(45deg, #ff6b6b, #fbc531);
-            -webkit-background-clip: text;
-            color: transparent;
+            color: #333;
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: kucanje 4s steps(40, end) 1s 1 normal both, treptanje .75s step-end infinite;
+        }
+        
+        @keyframes kucanje {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        
+        @keyframes treptanje {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: orange;
+            }
         }
         
