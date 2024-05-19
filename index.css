@@ -217,6 +217,7 @@ body {
             margin: 0 auto;
             letter-spacing: .15em;
             animation: kucanje 4s steps(40, end) 1s 1 normal both, treptanje .75s step-end infinite;
+            background-color: #040720;
         }
         
         @keyframes kucanje {
