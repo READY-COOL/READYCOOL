@@ -177,7 +177,7 @@ body {
         section {
             background-color: #040720; /* Promijenjena boja pozadine na bijelu */
             color: #fff; /* bjela boja teksta u sekcijama */
-            padding: 20px;
+            padding: 0px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -236,4 +236,8 @@ body {
         }
         #kvaliteta {
             padding:40px 0;
+        }
+        h2 {
+            padding: 0; /* Postavi padding na nulu */
+            margin: 0; /* Opcionalno postavi margin na nulu ako ne želiš ni margin */
         }
