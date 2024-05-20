@@ -242,4 +242,5 @@ body {
             padding: 0; /* Postavi padding na nulu */
             margin: 0; /* Opcionalno postavi margin na nulu ako ne želiš ni margin */
             text-align: center; /* Postavlja horizontalno centriranje */
+            width: 500px;
         }
