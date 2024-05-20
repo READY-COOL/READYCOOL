@@ -21,6 +21,17 @@ body {
             background-color: #040720; /* Promijenjena boja pozadine na #040720 */
             color: #fff; /* Promijenjena boja teksta u bijelu */
             padding-bottom: 500px; /* Dodajemo dodatni prostor na dnu tijela */
+
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-top-left-radius: 10px;
+            text-align: right;
         }
         header {
             background-color: #040720; /* Promijenjena boja pozadine na #040720 */
@@ -35,15 +46,6 @@ body {
             color: #000; /* Crna boja teksta u sekcijama */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         .naslovna {
             text-align: center;
@@ -92,15 +94,6 @@ body {
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -124,15 +117,6 @@ body {
             color: #000; /* Crna boja teksta u sekcijama */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         .naslovna {
             text-align: center;
@@ -180,15 +164,6 @@ body {
             padding: 0px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #0f172a; /* Promijenjena boja pozadine na #040720 */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         .slika{
             Width:500px;
@@ -245,53 +220,62 @@ body {
             width: 500px;
         }
         .custom-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .custom-image-container {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 20px;
-        }
-        
-        .custom-image-container img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .custom-text-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding-left: 20px;
-        }
-        
-        .custom-text-container h1 {
-            margin: 0;
-            margin-bottom: 10px;
-            font-size: 2em;
-        }
-        
-        .custom-text-container p {
-            margin: 0;
-            margin-bottom: 20px;
-        }
-        
-        .learn-more-button {
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        
-        .learn-more-button:hover {
-            background-color: darkblue;
-        }
-        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.custom-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.custom-image {
+    width: 550px;
+    height: 536px;
+    object-fit: cover;
+    margin-left: 1300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.custom-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.custom-text-container h1 {
+    width: 480px;
+    height: 224px;
+    margin: 0;
+    margin-bottom: -135px;
+    font-size: 3em;
+}
+.custom-text-container p {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.learn-more-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 120px;
+    text-decoration: auto;
+    border-radius: 20px;
+}
+
+.learn-more-button:hover {
+    background-color: darkblue;
+}
