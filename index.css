@@ -244,3 +244,54 @@ body {
             text-align: center; /* Postavlja horizontalno centriranje */
             width: 500px;
         }
+        .custom-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .custom-image-container {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+        
+        .custom-image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .custom-text-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 20px;
+        }
+        
+        .custom-text-container h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .custom-text-container p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        
+        .learn-more-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .learn-more-button:hover {
+            background-color: darkblue;
+        }
+        
