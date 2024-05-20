@@ -166,7 +166,7 @@ body {
         }
         .prazan-prostor {
             height: 150px; /* Visina praznog prostora */
-            background-color: #040720; /* Transparentna pozadina */
+            background-color: #0f172a; /* Transparentna pozadina */
         }
         .sadržaj {
             display: grid; /* Koristimo CSS grid */
@@ -175,14 +175,14 @@ body {
             padding: 0 20px; /* Dodan padding kako bi se spriječilo preklapanje sa strane */
         }
         section {
-            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            background-color: #0f172a; /* Promijenjena boja pozadine na bijelu */
             color: #fff; /* bjela boja teksta u sekcijama */
             padding: 0px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
+            background-color: #0f172a; /* Promijenjena boja pozadine na #040720 */
             color: #fff;
             padding: 10px 0;
             text-align: center;
@@ -215,7 +215,7 @@ body {
             justify-content: space-between;
             align-items: center;
             padding: 10px 0px;
-            background-color: #040720;
+            background-color: #0f172a;
             color: #fff;
         }
         
@@ -235,9 +235,11 @@ body {
             padding: 0;
         }
         #kvaliteta {
+            
             padding:40px 0;
         }
         h2 {
             padding: 0; /* Postavi padding na nulu */
             margin: 0; /* Opcionalno postavi margin na nulu ako ne želiš ni margin */
+            text-align: center; /* Postavlja horizontalno centriranje */
         }
