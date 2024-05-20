@@ -195,7 +195,8 @@ body {
         }
         #kvaliteta {
             
-            padding:40px 0;
+            padding: 40px;
+            margin-top: 60px;
         }
         h2 {
             padding: 0; /* Postavi padding na nulu */
