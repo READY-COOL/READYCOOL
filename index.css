@@ -24,15 +24,14 @@ body {
 
         }
         footer {
-            position: fixed;
-            bottom: 0;
-            right: 0;
+            margin-left: auto;
             background-color: #333;
             color: #fff;
             padding: 10px 20px;
-            border-top-left-radius: 10px;
+            width: calc(100% - 20px); /* Ovdje se uzima u obzir padding */
             text-align: right;
         }
+        
         header {
             background-color: #040720; /* Promijenjena boja pozadine na #040720 */
             color: #fff;
@@ -278,4 +277,24 @@ body {
 
 .learn-more-button:hover {
     background-color: darkblue;
+}
+.sekcija {
+    text-align: center;
+}
+.sekcija img {
+    display: block;
+    margin: 0 auto;
+}
+.sadržaj {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    width: 30%; /* Prilagodite širinu sekcija prema potrebama */
+}
+
+.slika {
+    max-width: 100%;
+    height: auto;
 }
