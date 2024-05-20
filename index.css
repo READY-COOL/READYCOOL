@@ -25,17 +25,10 @@ body {
         }
         footer {
             margin-left: auto;
-            background-color: #0f172a;
+            background-color: #040720;
             color: #fff;
             padding: 10px 0px;
             width: 100%;
-            text-align: center;
-        }
-        
-        header {
-            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
-            color: #fff;
-            padding: 10px 0;
             text-align: center;
         }
         section {
@@ -100,14 +93,6 @@ body {
             background-color: #040720; /* Promijenjena boja pozadine na #040720 */
             color: #fff; /* Promijenjena boja teksta u bijelu */
             padding-bottom: 500px; /* Dodajemo dodatni prostor na dnu tijela */
-        }
-        header {
-            display: flex;
-            flex-direction:row;
-            background-color: #040720; /* Promijenjena boja pozadine na #040720 */
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
         }
         section {
             padding: 20px;
@@ -189,7 +174,7 @@ body {
             justify-content: space-between;
             align-items: center;
             padding: 10px 0px;
-            background-color: #0f172a;
+            background-color: #040720;
             color: #fff;
         }
         
