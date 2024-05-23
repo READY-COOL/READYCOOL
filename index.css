@@ -137,17 +137,23 @@ body {
             background-color: #0f172a; /* Transparentna pozadina */
         }
         .sadržaj {
-            display: grid; /* Koristimo CSS grid */
+            display: flex; /* Koristimo CSS grid */
             grid-template-columns: repeat(3, 1fr); /* Tri kolone */
             grid-gap: 20px; /* Razmak između elemenata */
             padding: 0 20px; /* Dodan padding kako bi se spriječilo preklapanje sa strane */
+            justify-content: center; /* Centriranje horizontalno */
+            align-items: center; /* Centriranje vertikalno */
         }
+    
         section {
+            flex: 1;
             background-color: #0f172a; /* Promijenjena boja pozadine na bijelu */
             color: #fff; /* bjela boja teksta u sekcijama */
             padding: 0px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 2%; /* Ovo postavlja razmak između sekcija */
+    max-width: 500px; /* Ovo ograničava širinu svake sekcije na 500px */
         }
         .slika{
             Width:500px;
@@ -283,11 +289,6 @@ body {
     margin: 0 auto;
     max-width: 100%
 }
-.sadržaj {
-    display: flex;
-    justify-content: space-between;
-}
-
 section {
     width: 30%; /* Prilagodite širinu sekcija prema potrebama */
 }
