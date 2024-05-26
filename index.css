@@ -1,3 +1,4 @@
+@media (max-width: 480px) {
  /* Dodajemo malo stila */
  nav {
     background-color: transparent;
@@ -385,4 +386,5 @@ body {
 
 p {
     font-size: 20px;
+}
 }
