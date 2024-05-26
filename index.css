@@ -184,6 +184,8 @@ body {
             padding: 10px 0px;
             background-color: #040720;
             color: #fff;
+            flex-direction: column;
+          
         }
         
         nav {
@@ -244,15 +246,18 @@ body {
             margin-bottom: -135px;
             font-size: 3em;
             margin-right: 50px;
+
         }
         .custom-text-container p {
-            flex: 1;
             display: flex;
             justify-content: center;
+            align-items: center;
+            text-align: center;
             flex-wrap: wrap;
-            align-content: flex-end;
+            margin: 0;
             width: 480px;
-            margin-right: 50px;
+            margin-right: 45px;
+            margin-bottom: 30px;
         }
         .button-container {
             width: 480px ;
@@ -310,6 +315,7 @@ body {
             font-weight: bold;
             text-align: center;
         }
+        h2{margin-bottom: 30px;}
        h3 {color: #0f172a;
         font-size: 1em;
         font-weight: bold;
@@ -340,6 +346,7 @@ body {
     padding-left: 20px;
     align-items: end;
     align-content: flex-end;
+    margin-left: 40px;
 }
 
 
@@ -350,16 +357,19 @@ body {
     margin-bottom: -135px;
     font-size: 3em;
     margin-right: 50px;
+    margin-left: 40px;
 }
-.custom-text-container2 p {
-    flex: 1;
+ .custom-text-container2 p {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
-    align-content: flex-end;
+    margin: 0;
     width: 480px;
-    margin-right: 50px;
-}
+    margin-right: 45px;
+    margin-bottom: 30px;
+ }
 .button-container2 {
     width: 480px ;
     display: flex;
@@ -367,12 +377,94 @@ body {
     margin-right: 50px;
 }
 .custom-image2 {   
-     width: 450px;
-    height: 536px;
+    width: 480px;
+    height: 500px;
     object-fit: cover;
     margin-left: 0px;
     margin-top: 100px;
-    margin-bottom: 100px;
-    max-width: 100%
+    max-width: 100%;
 }
 
+p {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) 
+
+    header {
+        flex-direction: column;
+        align-items center
+    }
+    
+    nav {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    nav a {
+        margin: 0 10px;
+    }
+    
+    .naslovna h1 {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+    
+    .naslovna p {
+        font-size: 16px;
+    }
+    
+    .sadržaj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        width: 90%; /* Prilagođena širina sekcija na mobilnim uređajima */
+        margin: 10px 0;
+    }
+    
+    .custom-container,
+    .custom-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .custom-text-container h1 {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+    
+    .custom-text-container p,
+    .custom-text-container2 p {
+        font-size: 16px;
+    }
+    
+    .custom-image,
+    .custom-image2 {
+        width: 90%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    
+    .button-container,
+    .button-container2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .learn-more-button {
+        padding: 10px 80px;
+        font-size: 16px;
+    }
