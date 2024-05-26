@@ -184,8 +184,6 @@ body {
             padding: 10px 0px;
             background-color: #040720;
             color: #fff;
-            flex-direction: column;
-          
         }
         
         nav {
@@ -388,83 +386,3 @@ body {
 p {
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 768px) 
-
-    header {
-        flex-direction: column;
-        align-items center
-    }
-    
-    nav {
-        text-align: center;
-        margin: 10px 0;
-    }
-    
-    nav a {
-        margin: 0 10px;
-    }
-    
-    .naslovna h1 {
-        font-size: 24px;
-        margin-bottom: 60px;
-    }
-    
-    .naslovna p {
-        font-size: 16px;
-    }
-    
-    .sadržaj {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    section {
-        width: 90%; /* Prilagođena širina sekcija na mobilnim uređajima */
-        margin: 10px 0;
-    }
-    
-    .custom-container,
-    .custom-container2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .custom-text-container h1 {
-        font-size: 24px;
-        margin-bottom: 60px;
-    }
-    
-    .custom-text-container p,
-    .custom-text-container2 p {
-        font-size: 16px;
-    }
-    
-    .custom-image,
-    .custom-image2 {
-        width: 90%;
-        max-width: 100%;
-        margin: 20px 0;
-    }
-    
-    .button-container,
-    .button-container2 {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-    
-    .learn-more-button {
-        padding: 10px 80px;
-        font-size: 16px;
-    }
