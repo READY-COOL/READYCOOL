@@ -463,6 +463,34 @@ p {
 
 <h1 id="kvaliteta"><strong>BIRAJTE KVALITETU</strong></h1>
 
+<head>
+    <style>
+        .sadržaj8 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section8 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .slika8 {
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 10%;
+        }
+    </style>
+</head>
 <body>
 <div class="sadržaj8">
     <section class="section8">
@@ -484,7 +512,6 @@ p {
     </section>
 </div>
 </body>
-
     <div class="custom-container">
     
         <div class="custom-image-container" style="float: left;">
