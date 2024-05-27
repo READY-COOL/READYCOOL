@@ -389,18 +389,29 @@ p {
 }
 
 .sadržaj8 {
-    width: auto;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriranje sekcija po sredini */
+  }
 
-.section8 {
-    width: 500px;
-    margin-bottom: 20px;
-}
+  .section8 {
+    width: 100%; /* Sekcije zauzimaju 100% širine roditeljskog elementa */
+    margin-bottom: 20px; /* Razmak između sekcija */
+  }
 
-.slika8 {
-    height: 333px;
-    width: 100%;
-}
+  .slika8 {
+    width: 100%; /* Slike zauzimaju 100% širine sekcije */
+    height: auto; /* Zadržavanje proporcija slike */
+  }
+
+  h2 {
+    text-align: center; /* Centriranje naslova */
+  }
+
+  p {
+    text-align: center; /* Centriranje teksta u paragrafima */
+    padding: 0 10%; /* Razmak sa leve i desne strane za bolju čitljivost */
+  }
 
 
 
