@@ -1,5 +1,4 @@
- 
- /* Dodajemo malo stila */
+
  nav {
     background-color: transparent;
     padding: 10px 0;
@@ -112,7 +111,7 @@ body {
             color: #fff; /* Bijela boja teksta */
             position: relative;
         }
-        .naslovna::before {
+        .naslovna:before {
             content: "";
             position: absolute;
             top: 0;
@@ -389,186 +388,44 @@ p {
 }
 
 
-
-
-
-
-
-@media (max-width: 480px) {
-    .sadržaj {
+.sadržaj {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Razmak između sekcija */
 }
+
 .sadržaj section {
     width: 500px;
     box-sizing: border-box;
 }
-@media (max-width: 480px) {
+
+
+
+
+
+
+/* Stilovi za ekrane manje od 480px */
+@media (max-width: 398px) {
     .sadržaj {
         flex-direction: column;
         align-items: center;
     }
+
     .sadržaj section {
         width: 100%;
     }
-
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <link href="index.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Navigacija</title>
-
-<body>
-
-
-<meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>ReadyCool</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-
-
-<header>
-    <h1>READYCOOL</h1>
-    <nav>
-        <a href="index.html">Početna</a>
-        <a href="o_nama.html">O nama</a>
-        <a href="proizvodi.html">Proizvodi</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
-</header>
-
-
-<div class="naslovna">
-    <h1>Vaš pouzdani partner za građevinske potrebe</h1>
-    <p>Širok asortiman visokokvalitetne građevinske opreme i materijala.</p>
-</div>
-<div class="prazan-prostor"></div> <!-- Prazan prostor -->
-
-<title>Naslovni Tekst</title>
-
-<h1 id="kvaliteta"><strong>BIRAJTE KVALITETU</strong></h1>
-
-        <div class="sadržaj" style="width: auto;">
-            <meta charset="UTF-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-            <title>Document</title>
-            <section style="width: 500px;">
-                <h2><strong>ALATI</strong></h2>
-                <img alt="Slika sekcije 1" class="slika" src="pexels-energepic-com-27411-175039.jpg"
-                     style="height: 333px;">
-                <p>Visokokvalitetni alati za profesionalce i osobne radove uz osiguranu pouzdanost i izdržljivost.</p>
-            </section>
-
-            <section style="width: 500px;">
-                <h2>Građevinski materijali</h2>
-                <img alt="Slika sekcije 2" class="slika" src="pexels-yuraforrat-11429199.jpg">
-                <p>Kvalitetni materijali za savršenu realizaciju svakog građevinskog projekta uz stručne savjete.</p>
-            </section>
-
-            <section style="width: 500px;">
-                <h2>Električne instalacije</h2>
-                <img alt="Slika sekcije 3" class="slika" src="pexels-fatihyurtman-17842832.jpg">
-                <p>Inovativna i sigurna električna rješenja uz pratnju stručnog tima za uspješan završetak radova.</p>
-            </section>
-        </div>
-    </div>
-
-    <div class="custom-container">
-    
-        <div class="custom-image-container" style="float: left;">
-            <img alt="Slika" class="custom-image" src="pexels-goumbik-298723.jpg">
-        </div>
+    .naslovna::before{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slika {
+        max-width: 100%;
+    }
+    .sadržaj section {
         
-        <div class="custom-text-container" style="float: right;">
-            <h1>Naša priča</h1>
-            <p>Sa bogatim iskustvom u građevinskoj industriji, READYCOOL može biti i vaš pouzdani partner.</p>
-            
-            <div class="button-container">
-                <a class="learn-more-button" href="o_nama.html">Saznajte više</a>
-            </div>
-        </div>
-        
-    </div>
-    </section>    
-    </div>
-        
-              
-<div style="position: relative; text-align: center;">
-    <img src="3.png" alt="Footer Image" style="width: 100%; max-width: 1140px; height: auto; display: block; margin-left: auto; margin-right: auto; filter: brightness(50%)">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <img src="pexels-yury-kim-181374-585419.jpg" alt="Round Image" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
-        <div style="color: rgb(16, 228, 9); font-size: 40px;">
-            Ivica Rakela 
-        </div>
-
-        <div style="color: white; font-size: 24px;">
-            Najdraža mi je odgoda plaćanja! 
-        </div>
-    </div>
-</div>
-
-<h3>ČESTITAMO</h3>
-<h3>JEDAN SI OD RIJETKIH, OTKRIO SI NAŠ TAJNI KOD</h3>
-<h3>UZ KOD "GASS" OSTVARUJEŠ 5% POPUSTA NA SAV PRIBOR ZA GLETANJE</h3>
-
-<div style="margin-top: 40px; text-align: center; color: white;">
-    <h1>Naša jedinstvena ponuda</h1>
-    <p>Osiguravamo vrhunsku kvalitetu, stručnost i personaliziran pristup za potpuno zadovoljstvo naših kupaca.</p>
-</div>
-
-
-
-<div class="custom-container2">
-    
-    <div class="custom-text-container2" style="float: left;">
-        <h1>Vrhunska kvaliteta</h1>
-        <p>Svi naši proizvodi su pažljivo odabrani za vrhunsku kvalitetu i pouzdanost u izvođenju radova.</p>
-        
-        <div class="button-container2">
-            <a class="learn-more-button" href="o_nama.html">Saznajte više</a>
-        </div>
-    </div>
-    
-    <div class="custom-image-container2" style="float: right;">
-        <img alt="Slika" class="custom-image2" src="4.png">
-    </div>
-    
-</div>
-</section>    
-</div>
-
-
-
-<div class="custom-container">
-    
-    <div class="custom-image-container" style="float: left;">
-        <img alt="Slika" class="custom-image2" src="pexels-pixabay-162553.jpg">
-    </div>
-    
-    <div class="custom-text-container" style="float: right;">
-        <h1>Izvanredna kvaliteta</h1>
-        <p>Naša pažljivo odabrana ponuda proizvoda jamči izvrsnost i pouzdanost, omogućujući besprijekorno obavljanje svih radova.</p>
-        
-        <div class="button-container">
-            <a class="learn-more-button" href="o_nama.html">Saznajte više</a>
-        </div>
-    </div>
-    
-</div>
-</section>    
-</div>
-    
-
-
-
-
-
-
-<footer>
-    <p>&copy; Autorska prava © 2024 READYCOOL</p>
-</footer>
-}
+        box-sizing: border-box;
+    }
+   
+     
 }
