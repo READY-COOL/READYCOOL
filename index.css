@@ -152,7 +152,7 @@ body {
             padding: 0px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 0 2%; /* Ovo postavlja razmak između sekcija */
+            margin: 0 0%; /* Ovo postavlja razmak između sekcija */
     max-width: 500px; /* Ovo ograničava širinu svake sekcije na 500px */
         }
         
@@ -184,7 +184,7 @@ body {
         
         nav {
             text-align: right;
-            margin:0 1%;
+        
         }
         
         nav a {
@@ -228,7 +228,7 @@ body {
             
             flex: 1;
             flex-direction: column;
-            padding-left: 20px;
+            
             align-items: end;
             align-content: flex-end;
         }
@@ -258,7 +258,7 @@ body {
             width: 480px ;
             display: flex;
             justify-content: center;
-            margin-right: 50px;
+            
         }
         .custom-image {   
              width: 450px;
@@ -467,10 +467,21 @@ h2 {
         flex-direction: column;
     }
 
-    .custom-image-container, 
-    .custom-text-container {
+    .custom-image-container{
         flex: 1 1 100%;
         width: 410px;
+        flex: 1;
+        flex-direction: column;
+        align-items: end;
+        align-content: flex-end;
+        
+    }
+    .custom-text-container {
+        flex: 1;
+        flex-direction: column;
+        width: 410px;
+        align-items: end;
+        align-content: flex-end;
     }
     .custom-text-container h1 {
         width: 410px;
@@ -478,7 +489,7 @@ h2 {
         margin: 0;
         margin-bottom: -135px;
         font-size: 3em;
-        margin-right: 50px;
+      
     }
     .custom-text-container p {
         display: flex;
@@ -488,13 +499,17 @@ h2 {
         flex-wrap: wrap;
         margin: 0;
         width: 410px;
-        margin-right: 45px;
+
         margin-bottom: 30px;
+        margin-top: 50px;
     }
     .button-container {
         width: 410px;
         display: flex;
         justify-content: center;
-        margin-right: 50px;
+      
+    }
+    nav {
+        text-align: right;
     }
 }
