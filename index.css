@@ -412,14 +412,16 @@ p {
 
 
 /* Stilovi za ekrane manje od 480px */
-@media (max-width: 398px) {
+@media (max-width: 410px) {
     .sadržaj {
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
 
     .sadržaj section {
         width: 100%;
+        width: 410px;
     }
     .naslovna::before{
         width: 100%;
@@ -427,11 +429,12 @@ p {
         align-items: center;
     }
     .slika {
-        max-width: 100%;
         width: 410px;
+        max-width: 100%;
+        height: auto;
     }
     .sadržaj section {
-        
+        width: 410px;
         box-sizing: border-box;
     }
     .button-container {
@@ -439,6 +442,20 @@ p {
         display: flex;
         justify-content: center;
     
+}
+.custom-text-container h1 {
+    width: 410px;
+    height: 224px;
+    margin: 0;
+    margin-bottom: -135px;
+    font-size: 3em;
+    margin-right: 50px;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 410px;
 }
 }
    
@@ -453,5 +470,31 @@ p {
     .custom-image-container, 
     .custom-text-container {
         flex: 1 1 100%;
+        width: 410px;
+    }
+    .custom-text-container h1 {
+        width: 410px;
+        height: 224px;
+        margin: 0;
+        margin-bottom: -135px;
+        font-size: 3em;
+        margin-right: 50px;
+    }
+    .custom-text-container p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 410px;
+        margin-right: 45px;
+        margin-bottom: 30px;
+    }
+    .button-container {
+        width: 410px;
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
     }
 }
