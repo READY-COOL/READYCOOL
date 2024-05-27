@@ -434,18 +434,24 @@ p {
         
         box-sizing: border-box;
     }
-
+    .button-container {
+       
+        display: flex;
+        justify-content: center;
+    
+}
 }
    
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 410px) {
     .custom-container {
         flex-direction: column;
     }
 
-    .custom-image-container, .custom-text-container {
+    .custom-image-container, 
+    .custom-text-container {
         flex: 1 1 100%;
     }
 }
