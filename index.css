@@ -563,8 +563,9 @@ p {
     .custom-container2 {
         display: flex;
         padding: 20px;
-        flex-direction: column;
-        align-items: flex-end; /* Svi elementi će biti poravnati na kraju desne strane */
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
         max-width: 100%;
     }
 
@@ -619,14 +620,14 @@ p {
     }
 
     .custom-container2 p {
-        font-size: 20px;
-        text-align: center;
-        /* margin: 50px; */
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        width: 100%; /* Svi elementi će biti iste širine */
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 30px;
     }
     
     .custom-container2 p span {
@@ -652,9 +653,7 @@ p {
         margin-bottom: 30px;
     }
 
-    .custom-container2 {
-        margin-right: 20px; /* Dodali smo ovu liniju kako bi postavili razmak s desne strane */
-    }
+ 
 }
 
 
