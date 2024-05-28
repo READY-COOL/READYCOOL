@@ -250,7 +250,7 @@ body {
             text-align: center;
             flex-wrap: wrap;
             margin: 0;
-            width: 480px;
+           
             margin-right: 45px;
             margin-bottom: 30px;
         }
@@ -296,6 +296,7 @@ section {
 .slika {
     max-width: 100%;
     height: auto;
+
 }
 body {
     margin: 0;
@@ -411,105 +412,225 @@ p {
 
 
 
-/* Stilovi za ekrane manje od 480px */
-@media (max-width: 410px) {
+/* Stilovi za ekrane manje od 1024px */
+@media (max-width: 1024px) {
     .sadržaj {
         flex-direction: column;
         align-items: center;
-        padding: 0px;
+        padding: 0;
     }
 
     .sadržaj section {
         width: 100%;
-       
+        box-sizing: border-box;
     }
-    .naslovna::before{
+    
+    .naslovna::before {
         width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
     .slika {
         width: 100%;
         max-width: 100%;
         height: auto;
     }
+    
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-text-container h1,
+    .custom-container2 h1 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: -135px;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .custom-container2 p {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+    h2 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Stilovi za ekrane manje od 768px */
+@media (max-width: 768px) {
+    .sadržaj {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
     .sadržaj section {
         width: 100%;
         box-sizing: border-box;
     }
+    
+    .naslovna::before {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slika {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
     .button-container {
-       
+        width: 100%;
         display: flex;
         justify-content: center;
-    
-}
-.custom-text-container h1 {
-    width: 100%;
-    height: 224px;
-    margin: 0;
-    margin-bottom: -135px;
-    font-size: 3em;
-    margin-right: 50px;
-}
-h2 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    width: 100%x;
-}
-}
-   
-
-
-
-@media (max-width: 360px) {
-    .custom-container {
-        flex-direction: column;
     }
 
-    .custom-image-container{
-        flex: 1 1 100%;
-        width:100%;
-        flex: 1;
-        flex-direction: column;
-        align-items: end;
-        align-content: flex-end;
-        
-    }
-    .custom-text-container {
-        flex: 1;
-        flex-direction: column;
-        width: 360px;
-        align-items: end;
-        align-content: flex-end;
-    }
-    .custom-text-container h1 {
+    .custom-text-container h1,
+    .custom-container2 h1 {
         width: 100%;
-        height: 224px;
         margin: 0;
         margin-bottom: -135px;
-        font-size: 3em;
-      
-    }
-    .custom-text-container p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 2em;
         text-align: center;
-        flex-wrap: wrap;
-        margin: 0;
-        width: 100%x;
-
-        margin-bottom: 30px;
-        margin-top: 50px;
     }
+
+    .custom-container2 p {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+    h2 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Stilovi za ekrane manje od 480px */
+@media (max-width: 480px) {
+    .sadržaj {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .sadržaj section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .naslovna::before {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slika {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
     .button-container {
         width: 100%;
         display: flex;
         justify-content: center;
-      
     }
+
+    .custom-text-container h1,
+    .custom-container2 h1 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: -135px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .custom-container2 p {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+    h2 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Stilovi za ekrane manje od 360px */
+@media (max-width: 360px) {
+    .custom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .custom-image-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+    .custom-text-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .custom-text-container h1,
+    .custom-container2 h1 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: -135px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .custom-container2 p {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+    .custom-text-container p {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     nav {
+        width: 100%;
         text-align: right;
     }
 }
