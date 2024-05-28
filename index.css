@@ -271,6 +271,10 @@ body {
             max-width: 100%
         }
 
+      #suza {
+            margin-top: 0px;
+        }
+
 .learn-more-button {
     background-color: blue;
     color: white;
@@ -658,6 +662,9 @@ p {
         margin: 0;
         width: 100%; /* Svi elementi će biti iste širine */
         margin-bottom: 30px;
+    }
+    #suza {
+        margin-top: 150px;
     }
 
     .button-container {
