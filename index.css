@@ -244,14 +244,15 @@ body {
 
         }
         .custom-text-container p {
+            width:480px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             flex-wrap: wrap;
             margin: 0;
-           
-            margin-right: 45px;
+         
+            margin-right: px;
             margin-bottom: 30px;
         }
         .button-container {
@@ -465,6 +466,16 @@ p {
         text-align: center;
         width: 100%;
     }
+    .custom-text-container p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        /* width: 480px; */
+        margin-bottom: 30px;
+    }
 }
 
 /* Stilovi za ekrane manje od 768px */
@@ -513,6 +524,16 @@ p {
         text-align: center;
         margin: 0 0 30px 0;
     }
+    .custom-text-container p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        /* width: 480px; */
+        margin-bottom: 30px;
+    }
     
     h2 {
         padding: 0;
@@ -528,6 +549,23 @@ p {
         flex-direction: column;
         align-items: center;
         padding: 0;
+    }
+
+    .custom-container {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .custom-container2 {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-end; /* Svi elementi će biti poravnati na kraju desne strane */
+        max-width: 100%;
     }
 
     .sadržaj section {
@@ -554,7 +592,24 @@ p {
         justify-content: center;
     }
 
-    .custom-text-container h1,
+    .custom-text-container2 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* padding-left: 20px; */
+        align-items: center;
+        align-content: center;
+        /* margin-left: 40px; */
+    }
+
+    .custom-text-container h1{ 
+        width: 100%;
+        margin: 0;
+        margin-bottom: -135px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
     .custom-container2 h1 {
         width: 100%;
         margin: 0;
@@ -564,9 +619,19 @@ p {
     }
 
     .custom-container2 p {
-        width: 100%;
+        font-size: 20px;
         text-align: center;
-        margin: 0 0 30px 0;
+        /* margin: 50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%; /* Svi elementi će biti iste širine */
+    }
+    
+    .custom-container2 p span {
+        display: inline-block;
+        text-align: left; /* Poravnavanje teksta na lijevi rub ekrana */
     }
     
     h2 {
@@ -575,7 +640,23 @@ p {
         text-align: center;
         width: 100%;
     }
+
+    .custom-text-container p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%; /* Svi elementi će biti iste širine */
+        margin-bottom: 30px;
+    }
+
+    .custom-container2 {
+        margin-right: 20px; /* Dodali smo ovu liniju kako bi postavili razmak s desne strane */
+    }
 }
+
 
 /* Stilovi za ekrane manje od 360px */
 @media (max-width: 360px) {
@@ -600,6 +681,16 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+    }
+    .custom-text-container p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        
+        margin-bottom: 30px;
     }
 
     .custom-text-container h1,
