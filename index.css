@@ -371,7 +371,7 @@ body {
     width: 480px ;
     display: flex;
     justify-content: center;
-    margin-right: 50px;
+    
 }
 .custom-image2 {   
     width: 480px;
@@ -660,8 +660,13 @@ p {
         margin-bottom: 30px;
     }
 
- 
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
+ 
 
 
 /* Stilovi za ekrane manje od 360px */
