@@ -640,7 +640,7 @@ p {
         text-align: center;
         flex-wrap: wrap;
         margin: 0;
-        width: 412px;
+        width: 100%;
         margin-bottom: 30px;
     }
     
