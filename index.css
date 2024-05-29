@@ -619,7 +619,7 @@ p {
     }
 
     .custom-container2 h1 {
-        width: 100%;
+        width: 412px;
         margin: 0;
         margin-bottom: -135px;
         font-size: 1.5em;
@@ -655,7 +655,7 @@ p {
         text-align: center;
         width: 100%;
     }
-
+  
     .custom-text-container p {
         display: flex;
         justify-content: center;
