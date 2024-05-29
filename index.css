@@ -371,11 +371,14 @@ body {
     margin-right: 45px;
     margin-bottom: 30px;
  }
-.button-container2 {
-    width: 480px ;
+ .button-container2 {
+    width: 450px;
     display: flex;
-    justify-content: center;
-    
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: baseline;
+    justify-content: space-between;
 }
 .custom-image2 {   
     width: 480px;
@@ -672,7 +675,17 @@ p {
         display: flex;
         justify-content: center;
     }
+    .button-container2 {
+        width: 450px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
+
  
 
 
