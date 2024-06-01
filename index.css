@@ -491,7 +491,7 @@ p {
         margin-right: 30px;
         margin-left: 0px;
         display: inline-grid;
-        padding-left: 20px;
+       
         gap: 10px;
     }
     a:-webkit-any-link {
@@ -568,7 +568,7 @@ p {
         margin-right: 30px;
         margin-left: 0px;
         display: inline-grid;
-        padding-left: 20px;
+        
         gap: 10px;
     }
     a:-webkit-any-link {
@@ -713,7 +713,7 @@ p {
         margin-right: 30px;
         margin-left: 0px;
         display: inline-grid;
-        padding-left: 20px;
+        
         gap: 10px;
     }
     a:-webkit-any-link {
