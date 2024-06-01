@@ -41,14 +41,7 @@ body {
             width: 100%;
             text-align: center;
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
-            color: #000; /* Crna boja teksta u sekcijama */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+       
         .naslovna {
             text-align: center;
             padding: 100px 0;
@@ -94,7 +87,33 @@ body {
             color: #fff; /* bjela boja teksta u sekcijama */
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          
+            padding: 20px;
+            margin: 20px;
+            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            color: #000; /* Crna boja teksta u sekcijama */
+            border-radius: 5px;
+           
+            padding: 20px;
+            margin: 20px;
+            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
+            color: #000; /* Crna boja teksta u sekcijama */
+            border-radius: 5px;
+            
+            flex: 1;
+            background-color: #0f172a; /* Promijenjena boja pozadine na bijelu */
+            color: #fff; /* bjela boja teksta u sekcijama */
+            padding: 0px;
+            border-radius: 5px;
+           
+            margin: 0 0%; /* Ovo postavlja razmak između sekcija */
+            max-width: 500px; /* Ovo ograničava širinu svake sekcije na 500px */
+            
+           
+             width: 30%; /* Prilagodite širinu sekcija prema potrebama */
+            
+            
+        
         }
         body {
             font-family: Arial, sans-serif;
@@ -104,14 +123,7 @@ body {
             color: #fff; /* Promijenjena boja teksta u bijelu */
             padding-bottom: 500px; /* Dodajemo dodatni prostor na dnu tijela */
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #040720; /* Promijenjena boja pozadine na bijelu */
-            color: #000; /* Crna boja teksta u sekcijama */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+       
         .naslovna {
             text-align: center;
             padding: 100px 0;
@@ -155,16 +167,7 @@ body {
             align-items: center; /* Centriranje vertikalno */
         }
     
-        section {
-            flex: 1;
-            background-color: #0f172a; /* Promijenjena boja pozadine na bijelu */
-            color: #fff; /* bjela boja teksta u sekcijama */
-            padding: 0px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 0 0%; /* Ovo postavlja razmak između sekcija */
-    max-width: 500px; /* Ovo ograničava širinu svake sekcije na 500px */
-        }
+       
         
         .rounded-image {
             border-radius: 50%;
@@ -302,9 +305,7 @@ body {
     margin: 0 auto;
     max-width: 100%
 }
-section {
-    width: 30%; /* Prilagodite širinu sekcija prema potrebama */
-}
+
 
 .slika {
     max-width: 100%;
