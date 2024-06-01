@@ -11,6 +11,10 @@ nav6 {
     margin-left: 30px;
 }
 
+a6{    margin-right: 30px;
+    margin-left: 30px;
+}
+
 
 a6:-webkit-any-link {
     color: white;
@@ -764,6 +768,7 @@ p {
     }
     
     .custom-text-container2 h1 {
+        max-width: 360px;
         width: 100%;
         margin: 0;
         margin-bottom: -135px;
@@ -772,6 +777,7 @@ p {
     }
 
     .custom-container2 p {
+        max-width: 360px;
         width: 100%;
         text-align: center;
         margin: 0 0 30px 0;
@@ -789,7 +795,8 @@ p {
         justify-content: center;
     }
     .button-container2 {
-                width: 100%;
+        max-width: 360px;
+         width: 100%;
         display: flex;
         justify-content: center;
     }
