@@ -10,6 +10,7 @@ nav6 {
     padding-left: 20px;
 }
 
+
 a:-webkit-any-link {
     color: white;
     padding-right: 20px;
@@ -487,6 +488,17 @@ p {
         /* width: 480px; */
         margin-bottom: 30px;
     }
+    nav6 {
+        text-align: right;
+        margin-right: 10px;
+        display: inline-grid;
+        padding-left: 20px;
+        gap: 10px;
+    }
+    a:-webkit-any-link {
+        color: white;
+        padding-right: 0px;
+    }
 }
 
 /* Stilovi za ekrane manje od 768px */
@@ -552,7 +564,19 @@ p {
         text-align: center;
         width: 100%;
     }
+    nav6 {
+        text-align: right;
+        margin-right: 10px;
+        display: inline-grid;
+        padding-left: 20px;
+        gap: 10px;
+    }
+    a:-webkit-any-link {
+        color: white;
+        padding-right: 0px;
+    }
 }
+    
 
 /* Stilovi za ekrane manje od 480px */
 @media (max-width: 480px) {
@@ -688,6 +712,17 @@ p {
         align-items: center;
         justify-content: space-between;
     }
+    nav6 {
+        text-align: right;
+        margin-right: 10px;
+        display: inline-grid;
+        padding-left: 20px;
+        gap: 10px;
+    }
+    a:-webkit-any-link {
+        color: white;
+        padding-right: 0px;
+    }
 }
 
  
@@ -758,5 +793,16 @@ p {
     nav {
         width: 100%;
         text-align: right;
+    }
+    nav6 {
+        text-align: right;
+        margin-right: 10px;
+        display: inline-grid;
+        padding-left: 20px;
+        gap: 10px;
+    }
+    a:-webkit-any-link {
+        color: white;
+        padding-right: 0px;
     }
 }
