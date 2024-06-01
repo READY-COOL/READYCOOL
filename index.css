@@ -4,11 +4,15 @@
     padding: 10px 0;
     text-align: center;
 }
+nav6 {
+    text-align: right;
+    margin-right: 10px; /* Ovo pomera navigaciju malo ulevo */
+    padding-left: 20px;
+}
 
-nav a {
+a:-webkit-any-link {
     color: white;
-    text-decoration: none;
-   
+    padding-right: 20px;
 }
 
 nav a:hover {
@@ -177,7 +181,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0px;
+            padding: 30px 0px;
             background-color: #040720;
             color: #fff;
         }
