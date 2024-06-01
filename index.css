@@ -491,7 +491,8 @@ p {
     }
     nav6 {
         text-align: right;
-        margin-right: 10px;
+        margin-right: 30px;
+        margin-left: 0px;
         display: inline-grid;
         padding-left: 20px;
         gap: 10px;
@@ -567,7 +568,8 @@ p {
     }
     nav6 {
         text-align: right;
-        margin-right: 10px;
+        margin-right: 30px;
+        margin-left: 0px;
         display: inline-grid;
         padding-left: 20px;
         gap: 10px;
@@ -798,7 +800,8 @@ p {
     }
     nav6 {
         text-align: right;
-        margin-right: 10px;
+        margin-right: 30px;
+        margin-left: 0px;
         display: inline-grid;
         padding-left: 20px;
         gap: 10px;
