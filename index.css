@@ -219,7 +219,7 @@ body {
             padding: 0; /* Postavi padding na nulu */
             margin: 0; /* Opcionalno postavi margin na nulu ako ne želiš ni margin */
             text-align: center; /* Postavlja horizontalno centriranje */
-            width: 500px;
+            width: auto;
         }
         .custom-container {
             display: flex;
@@ -833,92 +833,19 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.product-image {
-    max-width: 100%; /* Prilagodi širinu slike */
-    height: auto; /* Održava proporcije slike */
-}
-
-.modal-toggle {
-    display: none; /* Sakrij radio gumb */
-}
-
-.modal {
-    display: none; /* Sakrij modal po defaultu */
-    position: fixed; /* Ostavi na mjestu */
-    z-index: 1; /* Ispred ostalih elemenata */
-    left: 0;
-    top: 0;
-    width: 100%; /* Širina ekrana */
-    height: 100%; /* Visina ekrana */
-    overflow: auto; /* Ako je sadržaj veći od prozora, omogućite pomicanje */
-    background-color: rgba(0, 0, 0, 0.4); /* Crna s prozirnošću */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% od vrha i automatski centrirano */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Širina modala */
-}
-
-.modal-image {
-    max-width: 100%; /* Prilagodi širinu slike u modalu */
-    height: auto; /* Održava proporcije slike */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: black;
-}
-
-/* Prikaži modal kada je radio gumb uključen */
-.modal-toggle:checked + .modal {
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .back-section {
+        position: absolute; /* Pozicija iznad ostalog sadržaja */
+        top: 10px; /* Razmak od vrha */
+        right: 100px; /* Razmak od desnog ruba */
+        font-size: 28px; /* Veličina fonta */
+        color: #aaa; /* Boja teksta */
+        cursor: pointer; /* Promjena kursora na pointer */
+    }
+    
+    .back-section:hover {
+        color: blue; /* Promjena boje na hover */
+    }
+    
 
 
 
