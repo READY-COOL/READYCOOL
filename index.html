@@ -167,8 +167,6 @@
 
 
 
-
-
 <title>Proizvodi</title>
 <style>
     body {
@@ -176,11 +174,12 @@
     }
 
     .product-container {
-        display: flex; /* Raspored slika u red */
-        flex-wrap: wrap; /* Omogućava prelazak u novi red ako nema prostora */
-        justify-content: space-around; /* Razmak između slika */
-        gap: 10px; /* Razmak između elemenata */
         
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: row;
     }
 
     .product {
