@@ -28,20 +28,20 @@
 
 
 
+
 <title>Proizvodi</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-
+ 
     .product-container {
         
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 5px;
     flex-direction: row;
-    }
+    align-items: center;
+
+}
 
     .product {
      
@@ -90,8 +90,9 @@
         width: 100%; /* Slika u modalu 100% širine */
         height: 100%; /* Slika u modalu 100% visine */
         object-fit: cover; /* Održava proporcije slike bez izobličenja */
-    }
+        
 
+    }
     .modal-text {
         flex: 1; /* Ostatak prostora ide tekstu */
     }
@@ -112,8 +113,8 @@
         color: black;
     }
 </style>
-</head>
-<body>
+
+
 <div class="product-container">
      
     <!-- Prva slika -->
