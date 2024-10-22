@@ -1,0 +1,19 @@
+﻿$(document).ready(function () {
+});
+
+function klikomOnemoguciPoveznicu(querySelector) {
+    $(querySelector).on('click touchdown', function () {
+        document.location = $(this).attr("href");
+        $(this).attr("href", "javascript:void(0)");
+    });
+}
+
+function klikomOnemoguciDugme(querySelector) {
+    var dugme = $(querySelector);
+    setTimeout(function () {
+        dugme.attr("type", "button");
+    }, 10);
+    if (dugme.attr("type") == "submit") {
+        dugme.click();
+    }
+}
