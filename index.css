@@ -879,3 +879,84 @@ h4 {
 
 
 
+ 
+    .product-container {
+        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+    .product {
+     
+        cursor: pointer;
+    }
+
+    .product img {
+        width: 500px; /* Slika zauzima punu širinu unutar proizvoda */
+        height: 500px; /* Održava proporcije slike */
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 55px;
+       
+
+    }
+
+    .modal-toggle {
+        display: none; /* Sakrij checkbox */
+    }
+
+    .modal {
+        display: none; /* Sakrij modal po defaultu */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Tamna pozadina s prozirnošću */
+    }
+
+    .modal-content {
+        background-color: #524e4e; /* Boja zelene masline */
+        color: black; /* Crna slova */
+        margin: 10% auto;
+        padding: 20px;
+        width: 60%; /* Širina modala */
+        border: 1px solid #888;
+        display: flex; /* Flexbox za raspored slike i teksta */
+        gap: 20px; /* Razmak između slike i teksta */
+        align-items: center; /* Poravnanje središnje */
+        height: 70%; /* Visina modala */
+    }
+
+    .modal-image {
+        width: 100%; /* Slika u modalu 100% širine */
+        height: 100%; /* Slika u modalu 100% visine */
+        object-fit: cover; /* Održava proporcije slike bez izobličenja */
+        
+
+    }
+    .modal-text {
+        flex: 1; /* Ostatak prostora ide tekstu */
+    }
+
+    .modal h2, .modal p {
+        margin: 10px 0; /* Margina između naslova i opisa */
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover {
+        color: black;
+    }
