@@ -859,7 +859,7 @@ p {
 
 
 h4 {
-    padding-left: 55px; /* Levo odstojanje od ivice */
+   
     text-align: center; /* Centriranje teksta */
     
     font-family: Arial, sans-serif; /* Font porodica */
@@ -885,7 +885,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 100px;
     flex-direction: row;
     align-items: center;
 
@@ -901,7 +901,7 @@ h4 {
         height: 500px; /* Održava proporcije slike */
         padding-bottom: 5px;
         padding-top: 5px;
-        padding-left: 55px;
+        
        
 
     }
@@ -959,4 +959,10 @@ h4 {
 
     .close:hover {
         color: black;
+    }
+
+
+    element.style {
+        height: 166.5px;
+        width: auto;
     }
