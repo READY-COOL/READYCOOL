@@ -966,3 +966,24 @@ h4 {
         height: 166.5px;
         width: auto;
     }
+
+
+
+
+
+
+
+    h5 {
+        padding: 0; /* Postavi padding na nulu */
+        margin: 0; /* Opcionalno postavi margin na nulu ako ne želiš ni margin */
+        text-align: left; /* Postavlja horizontalno centriranje */
+        width: auto;
+        padding-left: 60px;
+        font-size: xx-large;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+
+
+
